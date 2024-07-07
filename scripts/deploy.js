@@ -10,7 +10,7 @@ async function main() {
   const candidates = await Votingdata.getallcandidates();
   console.log(candidates)
 
-
+//deploy data
 }
 
 main()
