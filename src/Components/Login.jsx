@@ -2,7 +2,7 @@ import React from 'react'
 
 const Login = (props) => {
   return (
-    <div className='bg-[#6731d4] text-white h-screen lg:w-full text-center flex '>
+    <div className='bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white h-screen lg:w-full text-center flex '>
 
        <div className='container m-auto lg:w-3/4  sm:w-full h-1/3 text-center  '>
         <p className='  mx-auto '>please use sepolia test network</p>

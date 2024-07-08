@@ -2,10 +2,12 @@ import React from 'react'
 
 const Connected = (props) => {
   return (
-    <div className='h-screen md:w-full w-full  bg-[#6731d4] flex items-center text-white'>
+    <div className='h-screen md:w-full w-full  bg-gradient-to-r from-violet-500 to-fuchsia-500 flex items-center text-white'>
       <div className='container mx-auto md:w-3/4  text-center overflow-hidden'>
         
-        <h1 className='md:text-4xl text-white mt-8'>your account ... {props.accounts}</h1>
+        
+      <h1 className='md:text-4xl text-white mt-8'>your account ... {props.accounts}</h1>
+         <h2 className='md:text-4xl text-white mt-8'>Vote for your preferred representative</h2>
          { props.status ? (<p>you have already voted!</p>) : (
           <div className='mt-10 flex md:flex-row flex-col item-center '>
             <input type="number"  value={props.number} className='h-11 w-32 text-black mx-auto'   placeholder="type here" onChange={props.handlingnumber} />
@@ -15,7 +17,7 @@ const Connected = (props) => {
     
       
       
-         <table  className='container text-center mt-12'>
+         <table  className='container text-center mt-12 auto'>
           <thead className=''>
             <tr className='text-xl'>
             <th>Index</th>
