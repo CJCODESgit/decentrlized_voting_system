@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const {
   time,
   loadFixture,
@@ -17,6 +18,7 @@ describe("Lock", function () {
     const unlockTime = (await time.latest()) + ONE_YEAR_IN_SECS;
 
     // Contracts are deployed using the first signer/account by default
+    // eslint-disable-next-line no-undef
     const [owner, otherAccount] = await ethers.getSigners();
 
     const Lock = await ethers.getContractFactory("Lock");
